@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Dan</title>
+</head>
+
+<body>
+<div style="padding:0 5%">
+    {% block header %}
+        {% include "chinese-templates/header.html" %}
+    {% endblock %}
+
+    {% block main-body %}{% endblock %}
+
+    {% block footer %}
+        {% include "chinese-templates/footer.html" %}
+    {% endblock %}
+</div>
+</body>
+</html>
+
